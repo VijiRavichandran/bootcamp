@@ -12,12 +12,14 @@
       src: /usr/local/node-v4.8.6-linux-x64/bin/node
       dest: /usr/local/bin/node
       state: link
+      force: yes
 
   - name: symlink npm to npm
     file:
       src: /usr/local/node-v4.8.6-linux-x64/bin/npm
       dest: /usr/local/bin/npm
       state: link
+      force: yes
 
   - name: download script to install yarn
     get_url:
